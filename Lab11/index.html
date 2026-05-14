@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎯 Adivina el Número | Juego JavaScript</title>
+    <meta
+      name="description"
+      content="Juego interactivo creado con HTML, CSS y JavaScript."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =====================================
+         FONDO DECORATIVO
+    ====================================== -->
+
+    <div class="background-glow"></div>
+    <div class="particles"></div>
+
+    <!-- =====================================
+         TARJETA PRINCIPAL
+    ====================================== -->
+
+    <main class="game-card" id="game-card">
+      <!-- Header -->
+
+      <header class="game-header">
+        <h1>🎯 Adivina el Número</h1>
+
+        <p class="subtitle">
+          Estoy pensando en un número del
+          <span>1</span> al <span>100</span>
+        </p>
+      </header>
+
+      <!-- Controles -->
+
+      <section class="controls">
+        <input
+          type="number"
+          id="inputIntento"
+          min="1"
+          max="100"
+          placeholder="Número"
+          autocomplete="off"
+        />
+
+        <button type="button" id="btnAdivinar">🎲 Adivinar</button>
+      </section>
+
+      <!-- Información -->
+
+      <section class="info-panel">
+        <p id="mensaje">🎮 ¡Comienza el juego!</p>
+
+        <div class="stats">
+          <p id="contador">Intentos: 0</p>
+
+          <p id="historial">Historial:</p>
+        </div>
+      </section>
+
+      <!-- Reiniciar -->
+
+      <button id="btnReiniciar" style="display: none">🔄 Jugar otra vez</button>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <p>Proyecto realizado con HTML, CSS y JavaScript</p>
+      </footer>
+    </main>
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="Lab11.js"></script>
+  </body>
+</html>
